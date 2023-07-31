@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas Interativo</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Gerador de Senhas</h1>
+        <label for="len">Tamanho da Senha:</label>
+        <input type="range" id="len" name="len" min="6" max="20" value="12">
+        <span id="lenValue">12</span>
+        <br>
+        <input type="checkbox" id="Maiuscula" name="Maiuscula">
+        <label for="Maiuscula">Letras Maiúsculas</label>
+        <br>
+        <input type="checkbox" id="Minuscula" name="Minuscula">
+        <label for="Minuscula">Letras Minúsculas</label>
+        <br>
+        <input type="checkbox" id="Numero" name="Numero">
+        <label for="Numero">Números</label>
+        <br>
+        <input type="checkbox" id="Caracteres" name="Caracteres">
+        <label for="Caracteres">Caracteres Especiais</label>
+        <br>
+        <button id="generate">Gerar Senha</button>
+        <button id="reset">Resetar Opções</button>
+        <button id="copy">Copiar Senha</button>
+        <div id="senha"></div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
